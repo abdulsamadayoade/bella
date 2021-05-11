@@ -1,0 +1,45 @@
+.nav {
+    padding: 2rem 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        .lines {
+            margin-right: .5rem;
+        }
+
+        .line {
+            height: 2px;
+            width: 2.2rem;
+            margin: 4px;
+            background-color: #000;
+            align-self: center;
+        }
+
+        span {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+
+    &__cta {
+        color: #000;
+        letter-spacing: .7px;
+    }
+
+    &__logo {
+        img {
+            height: 13rem;
+            width: 30rem;
+        }
+    }
+}
