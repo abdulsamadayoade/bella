@@ -64,7 +64,7 @@ ul {
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .nav__menu {
@@ -95,6 +95,167 @@ ul {
 .nav__logo img {
   height: 13rem;
   width: 30rem;
+}
+
+.nav .left-box,
+.nav .right-box {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+}
+
+.nav .left-box {
+  background-color: red;
+  left: 0;
+  width: 60%;
+  transform: translateX(-100%);
+  transition: transform .5s ease;
+}
+
+.nav .left-box.active {
+  transform: translateX(0);
+}
+
+.nav .right-box {
+  background-image: linear-gradient(180deg, #1b1c1e, #1b1c1e);
+  right: 0;
+  width: 40%;
+  transform: translateX(100%);
+  transition: transform .5s ease;
+  padding: 10rem 2rem 0 12rem;
+}
+
+.nav .right-box .close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav .right-box .close span {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.nav .right-box .close div {
+  width: 5rem;
+  height: 5rem;
+  background-color: #272727;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.nav .right-box .close img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav .right-box .community {
+  margin-top: 15rem;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.nav .right-box .community p {
+  position: relative;
+}
+
+.nav .right-box .community p::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: -25%;
+  transform: translateY(25%, -40%);
+  height: 2px;
+  width: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav .right-box .community .social-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: .7rem;
+  max-width: 11rem;
+}
+
+.nav .right-box .community .social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+.nav .right-box .community .social-icons img {
+  width: 2rem;
+  transition: transform .3s ease;
+}
+
+.nav .right-box .subscribe {
+  margin-top: 9rem;
+  color: #FFFFFF;
+}
+
+.nav .right-box .subscribe h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: -.2px;
+}
+
+.nav .right-box .subscribe p {
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+}
+
+.nav .right-box .subscribe form {
+  display: flex;
+}
+
+.nav .right-box .subscribe input {
+  padding: 1.5rem 2rem;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.nav .right-box .subscribe input::placeholder {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1.8px;
+}
+
+.nav .right-box .subscribe input[type="text"] {
+  background: transparent;
+  border: 1px solid rgba(246, 246, 247, 0.25);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  flex: 1;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+
+.nav .right-box .subscribe input[type="submit"] {
+  flex-basis: 35%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #FFFFFF;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav .right-box.active {
+  transform: translateX(0);
 }
 
 header {
