@@ -127,10 +127,11 @@ ul {
 .nav .left-box ul a::after {
   content: '';
   position: absolute;
-  bottom: 1.5rem;
+  top: 60%;
+  transform: translateY(-60%);
   left: 0;
   height: 1px;
-  background-color: #121212;
+  background-color: #000;
   width: 0;
   transition: all .5s ease;
 }
