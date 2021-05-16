@@ -28,3 +28,52 @@ header {
         }
     }
 }
+
+// SECTIONS
+section {
+    padding: 10rem 0;
+}
+
+// INTRO SECTION
+.intro {
+    &__inner {
+        max-width: 55rem;
+        margin: 0 auto;
+        text-align: center;
+
+        .span-1 {
+            color: $color-5;
+            text-transform: uppercase;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+            word-spacing: 3px;
+            margin-bottom: 1.8rem;
+            display: inline-block;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -6rem;
+                height: 1.2px;
+                width: 5rem;
+                background-color: $color-5;
+            }
+        }
+
+        .h-1 {
+            font-family: 'Literata', serif;
+            font-size: 3.5rem;
+            line-height: 1.4;
+            color: $color-1;
+            text-transform: capitalize;
+            margin-bottom: 3rem;
+        }
+
+        .p-1 {
+            margin-bottom: 3rem;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.btn-green {
+    border: 1px solid $color-1;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s;
+
+    &::before {
+        background: $color-5;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        width: 0;
+        height: 100%;
+        transition: width .3s ease;
+    }
+
+    &:hover {
+        color: $color-3;
+        border-color: $color-5;
+
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    height: 7rem;
+    width: 20rem;
+    padding: 2rem;
+    background: transparent;
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    word-spacing: 3px;
+}
