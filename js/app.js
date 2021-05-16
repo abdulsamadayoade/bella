@@ -24,10 +24,6 @@ function slideInNavList(e) {
     gsap.from('.leftLink3', {opacity: 0, y: 40, x: -20, duration: .8, delay: 1.3, ease: 'ease.out(1.5)'});
     gsap.from('.leftLink4', {opacity: 0, y: 40, x: -20, duration: .8, delay: 1.6, ease: 'ease.out(1.5)'});
     gsap.from('.leftLink5', {opacity: 0, y: 40, x: -20, duration: .8, delay: 1.9, ease: 'ease.out(1.5)'});
-
-
-    // leftAnim.from('.left-box a', {opacity: 0, y: 40, delay: 2, duration: 1, ease: 'power4.out'});
-    // gsap.from('.omo', {opacity: 0, y: 40, duration: 1, ease: 'power4.out'});
 }
 
 closeMenu.addEventListener('click', removeSlideInNavList);
@@ -36,3 +32,13 @@ function removeSlideInNavList() {
     leftBox.classList.remove('active');
     rightBox.classList.remove('active');
 }
+
+// HERO SLIDER
+$('.hero__slides').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: false,
+    nextArrow: false
+});
