@@ -1,10 +1,16 @@
 .nav {
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 100;
+
+    &__logo {
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: $color-2;
+    }
 
     &__menu {
         display: flex;

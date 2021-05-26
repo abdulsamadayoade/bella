@@ -1,2 +1,2 @@
 # Bella
-A multi-pages website for a hotel.
+A multi-pages website for a yoga center.
