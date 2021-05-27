@@ -1,8 +1,19 @@
-.h-1 {
+.h {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 5.5rem;
     line-height: 1.4;
-    color: $color-1;
     text-transform: capitalize;
     margin-bottom: 2rem;
+}
+
+.h-1 {
+    font-size: 5.5rem;
+    color: $color-1;
+    @extend .h;
+}
+
+.h-2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    color: $color-3;
+    @extend .h;
 }
