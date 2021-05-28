@@ -416,6 +416,10 @@ section {
   margin-top: 5rem;
 }
 
+.discover .col {
+  transition: transform .3s ease-in-out;
+}
+
 .discover .col img {
   width: 100%;
 }
@@ -431,4 +435,8 @@ section {
   font-size: 1.2rem;
   letter-spacing: .3px;
   margin-top: .7rem;
+}
+
+.discover a:hover .col {
+  transform: scale(1.05);
 }
