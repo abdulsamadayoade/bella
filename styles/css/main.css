@@ -364,6 +364,14 @@ ul {
   color: #FFFFFF;
 }
 
+span {
+  color: #8b8b8b;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
 header {
   height: 100vh;
 }
@@ -394,14 +402,6 @@ section {
 .discover {
   width: 100%;
   background-image: url("../../assets/bg.jpg");
-}
-
-.discover span {
-  color: #8b8b8b;
-  text-transform: uppercase;
-  letter-spacing: .7px;
-  font-weight: 500;
-  font-size: 1.4rem;
 }
 
 .discover p {
@@ -439,4 +439,47 @@ section {
 
 .discover a:hover .col {
   transform: scale(1.05);
+}
+
+.cta {
+  padding: 0;
+}
+
+.cta .h-2 {
+  color: #303030;
+  line-height: 1.05;
+  font-size: 6rem;
+  width: 60rem;
+  max-width: 100%;
+  margin: 3rem 0 4rem;
+}
+
+.cta .row-2 {
+  display: flex;
+}
+
+.cta .row-2 img {
+  width: 100%;
+}
+
+.cta .row-2 .col:first-child {
+  width: 60%;
+  padding: 12rem 10rem;
+}
+
+.cta .row-2 .col:first-child a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b6354;
+  color: #FFFFFF;
+  width: 30rem;
+}
+
+.cta .row-2 .col:first-child p {
+  margin-top: 5rem;
+}
+
+.cta .row-2 .col:last-child {
+  width: 40%;
 }

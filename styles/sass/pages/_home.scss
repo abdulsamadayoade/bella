@@ -32,14 +32,6 @@ section {
     width: 100%;
     background-image: url('../../assets/bg.jpg');
 
-    span {
-        color: $color-8;
-        text-transform: uppercase;
-        letter-spacing: .7px;
-        font-weight: 500;
-        font-size: 1.4rem;
-    }
-
     p {
         width: 80rem;
         color: $color-3;
@@ -78,6 +70,50 @@ section {
             .col {
                 transform: scale(1.05);
             }
+        }
+    }
+}
+
+// CTA SECTION
+.cta {
+    padding: 0;
+
+    .h-2 {
+        color: $color-9;
+        line-height: 1.05;
+        font-size: 6rem;
+        width: 60rem;
+        max-width: 100%;
+        margin: 3rem 0 4rem;
+    }
+
+    .row-2 {
+        display: flex;
+
+        img {
+            width: 100%;
+        }
+
+        .col:first-child {
+            width: 60%;
+            padding: 12rem 10rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-5;
+                color: $color-3;
+                width: 30rem;
+            }
+
+            p {
+                margin-top: 5rem;
+            }
+        }
+
+        .col:last-child {
+            width: 40%;
         }
     }
 }

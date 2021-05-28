@@ -17,3 +17,11 @@
     color: $color-3;
     @extend .h;
 }
+
+span {
+    color: $color-8;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
