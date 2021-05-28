@@ -90,8 +90,13 @@ section {
     .row-2 {
         display: flex;
 
+        .col {
+            height: 65rem;
+        }
+
         img {
             width: 100%;
+            height: 100%;
         }
 
         .col:first-child {

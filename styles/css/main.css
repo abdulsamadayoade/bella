@@ -458,8 +458,13 @@ section {
   display: flex;
 }
 
+.cta .row-2 .col {
+  height: 65rem;
+}
+
 .cta .row-2 img {
   width: 100%;
+  height: 100%;
 }
 
 .cta .row-2 .col:first-child {
