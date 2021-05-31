@@ -3,3 +3,15 @@
     padding: 0 2rem;
     margin: 0 auto;
 }
+
+.row-2 {
+    display: flex;
+
+    .col {
+        height: 65rem;
+    }
+
+    .col:first-child {
+        width: 60%;
+    }
+}
