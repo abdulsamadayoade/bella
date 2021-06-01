@@ -191,3 +191,120 @@ section {
         }
     }
 }
+
+// PLANS SECTION
+.plans {
+    .col:first-child {
+        display: flex;
+        justify-content: center;
+        width: 38%;
+
+        span {
+            display: block;
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    .col:last-child {
+        width: 62%;
+        padding: 0 5rem;
+    }
+
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1.5rem;
+    }
+
+    .plan {
+        padding: 3rem;
+        color: $color-1;
+        font-size: 1.38rem;
+
+        &__basic {
+            background-color: #f4f7f9;
+            border-top: 4px solid $color-5;
+
+            .line {
+                background-color: #8b8b8b;
+            }
+
+            button {
+                border-color: $color-5;
+
+                &:hover {
+                    border-color: $color-9;
+                }
+            }
+        }
+
+        &__premium {
+            background-color: $color-5;
+            border-top: 4px solid $color-5;
+            color: $color-3;
+
+            .line {
+                background-color: $color-3;
+            }
+
+            button {
+                border-color: $color-3;
+
+                &:hover {
+                    border-color: transparent;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 2.2rem;
+            margin-bottom: .5rem;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 1.8rem;
+        }
+
+        h3, span {
+            text-align: center;
+        }
+
+        .line {
+            height: 1px;
+            width: 100%;
+        }
+
+        p {
+            margin: 2rem 0;
+        }
+
+        ul {
+            margin: 5rem 0 4rem;
+        }
+
+        li {
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            color: $color-3;
+            background-color: $color-5;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-width: 1px;
+            border-style: solid;
+            padding: 1.7rem 3rem;
+            outline: none;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: $color-9;
+            }
+        }
+    }
+}

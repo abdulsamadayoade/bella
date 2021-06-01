@@ -566,3 +566,117 @@ section .h-2 {
   font-size: 1.3rem;
   letter-spacing: .5px;
 }
+
+.plans .col:first-child {
+  display: flex;
+  justify-content: center;
+  width: 38%;
+}
+
+.plans .col:first-child span {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
+.plans .col:last-child {
+  width: 62%;
+  padding: 0 5rem;
+}
+
+.plans-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+.plans .plan {
+  padding: 3rem;
+  color: #000;
+  font-size: 1.38rem;
+}
+
+.plans .plan__basic {
+  background-color: #f4f7f9;
+  border-top: 4px solid #0b6354;
+}
+
+.plans .plan__basic .line {
+  background-color: #8b8b8b;
+}
+
+.plans .plan__basic button {
+  border-color: #0b6354;
+}
+
+.plans .plan__basic button:hover {
+  border-color: #303030;
+}
+
+.plans .plan__premium {
+  background-color: #0b6354;
+  border-top: 4px solid #0b6354;
+  color: #FFFFFF;
+}
+
+.plans .plan__premium .line {
+  background-color: #FFFFFF;
+}
+
+.plans .plan__premium button {
+  border-color: #FFFFFF;
+}
+
+.plans .plan__premium button:hover {
+  border-color: transparent;
+}
+
+.plans .plan h3 {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
+}
+
+.plans .plan span {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+
+.plans .plan h3, .plans .plan span {
+  text-align: center;
+}
+
+.plans .plan .line {
+  height: 1px;
+  width: 100%;
+}
+
+.plans .plan p {
+  margin: 2rem 0;
+}
+
+.plans .plan ul {
+  margin: 5rem 0 4rem;
+}
+
+.plans .plan li {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.plans .plan button {
+  display: block;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #0b6354;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1.7rem 3rem;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.plans .plan button:hover {
+  background-color: #303030;
+}
