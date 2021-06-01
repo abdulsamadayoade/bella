@@ -415,9 +415,20 @@ section {
   padding: 15rem 0;
 }
 
+section .h-2 {
+  color: #303030;
+  font-size: 6rem;
+  line-height: 1.05;
+}
+
 .discover {
   width: 100%;
   background-image: url("../../assets/bg.jpg");
+}
+
+.discover .h-2 {
+  color: #FFFFFF;
+  line-height: 1.5;
 }
 
 .discover p {
@@ -432,11 +443,8 @@ section {
   margin-top: 5rem;
 }
 
-.discover .col {
-  transition: transform .3s ease-in-out;
-}
-
 .discover .col img {
+  transition: transform .3s ease-in-out;
   width: 100%;
 }
 
@@ -453,7 +461,7 @@ section {
   margin-top: .7rem;
 }
 
-.discover a:hover .col {
+.discover a:hover img {
   transform: scale(1.05);
 }
 
@@ -462,9 +470,6 @@ section {
 }
 
 .cta .h-2 {
-  color: #303030;
-  line-height: 1.05;
-  font-size: 6rem;
   width: 60rem;
   max-width: 100%;
   margin: 3rem 0 4rem;
@@ -506,12 +511,6 @@ section {
 
 .clients .col:last-child {
   padding: 12rem 10rem;
-}
-
-.clients .h-2 {
-  color: #303030;
-  line-height: 1.05;
-  font-size: 6rem;
 }
 
 .clients__logos {

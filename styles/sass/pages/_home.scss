@@ -25,12 +25,23 @@ header {
 // SECTIONS
 section {
     padding: 15rem 0;
+
+    .h-2 {
+        color: $color-9;
+        font-size: 6rem;
+        line-height: 1.05;
+    }
 }
 
 // DISCOVER SECTION
 .discover {
     width: 100%;
     background-image: url('../../assets/bg.jpg');
+
+    .h-2 {
+        color: $color-3;
+        line-height: 1.5;
+    }
 
     p {
         width: 80rem;
@@ -45,9 +56,9 @@ section {
     }
 
     .col {
-        transition: transform .3s ease-in-out;
 
         img {
+            transition: transform .3s ease-in-out;
             width: 100%;
         }
 
@@ -67,7 +78,7 @@ section {
 
     a {
         &:hover {
-            .col {
+            img {
                 transform: scale(1.05);
             }
         }
@@ -79,9 +90,6 @@ section {
     padding: 0;
 
     .h-2 {
-        color: $color-9;
-        line-height: 1.05;
-        font-size: 6rem;
         width: 60rem;
         max-width: 100%;
         margin: 3rem 0 4rem;
@@ -127,12 +135,6 @@ section {
 
     .col:last-child {
         padding: 12rem 10rem;
-    }
-
-    .h-2 {
-        color: $color-9;
-        line-height: 1.05;
-        font-size: 6rem;
     }
 
     &__logos {
