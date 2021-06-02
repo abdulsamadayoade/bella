@@ -72,14 +72,6 @@ ul {
   display: flex;
 }
 
-.row-2 .col {
-  height: 65rem;
-}
-
-.row-2 .col:first-child {
-  width: 60%;
-}
-
 .nav {
   padding: 3rem 0;
   display: flex;
@@ -422,8 +414,8 @@ section .h-2 {
 }
 
 .discover {
-  width: 100%;
   background-image: url("../../assets/bg.jpg");
+  background-size: cover;
 }
 
 .discover .h-2 {
@@ -434,13 +426,13 @@ section .h-2 {
 .discover p {
   width: 80rem;
   color: #FFFFFF;
+  margin-bottom: 5rem;
 }
 
 .discover .row {
   display: grid;
-  grid-template-columns: repeat(3, 40rem);
+  grid-template-columns: repeat(3, minmax(40rem, 1fr));
   gap: 3rem;
-  margin-top: 5rem;
 }
 
 .discover .col img {
@@ -480,11 +472,24 @@ section .h-2 {
   height: 100%;
 }
 
-.cta .col:first-child {
-  padding: 12rem 10rem;
+.cta .col {
+  height: 65rem;
 }
 
-.cta .col:first-child a {
+.cta .col-1 {
+  width: 60%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta .col-1 div {
+  width: 60rem;
+  max-width: 100%;
+}
+
+.cta .col-1 a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -493,11 +498,11 @@ section .h-2 {
   width: 30rem;
 }
 
-.cta .col:first-child p {
+.cta .col-1 p {
   margin-top: 5rem;
 }
 
-.cta .col:last-child {
+.cta .col-2 {
   width: 40%;
 }
 
@@ -505,12 +510,14 @@ section .h-2 {
   height: 40rem;
 }
 
-.clients .col:first-child {
-  padding: 0 5rem;
+.clients .col-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.clients .col:last-child {
-  padding: 12rem 10rem;
+.clients .col-2 {
+  padding: 0 5rem;
 }
 
 .clients__logos {
@@ -524,7 +531,8 @@ section .h-2 {
 }
 
 .clients__testimonial {
-  width: 80%;
+  margin-top: 10rem;
+  width: 60%;
   position: relative;
 }
 
