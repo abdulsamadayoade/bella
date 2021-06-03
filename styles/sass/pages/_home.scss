@@ -30,6 +30,7 @@ section {
         color: $color-9;
         font-size: 6rem;
         line-height: 1.05;
+        font-weight: 700;
     }
 }
 
@@ -321,6 +322,43 @@ section {
             &:hover {
                 background-color: $color-9;
             }
+        }
+    }
+}
+
+// QUOTE SECTION
+.quote {
+
+    &-box {
+        width: 80rem;
+        margin: 0 auto;
+        max-width: 100%;
+        font-weight: 700;
+        font-family: 'Cormorant Garamond', serif;
+        color: $color-4;
+        line-height: 1.2;
+        position: relative;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -14rem;
+            width: 10rem;
+            height: 10rem;
+            background-image: url('../../../assets/left-quote.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        p {
+            font-size: 6rem;
+            margin-bottom: 2rem;
+        }
+
+        span {
+            font-weight: 700;
         }
     }
 }
