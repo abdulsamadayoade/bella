@@ -721,3 +721,19 @@ section .h-2 {
 .quote-box span {
   font-weight: 700;
 }
+
+.footer {
+  background-image: url("../../../assets/bg.jpg");
+  color: #e6e6e6;
+}
+
+.footer__inner {
+  padding: 5rem;
+}
+
+.footer a {
+  color: #e6e6e6;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
