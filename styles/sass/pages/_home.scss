@@ -124,6 +124,11 @@ section {
             background-color: $color-5;
             color: $color-3;
             width: 30rem;
+            transition: background-color .3s ease-in-out;
+
+            &:hover {
+                background-color: $color-9
+            }
         }
 
         p {

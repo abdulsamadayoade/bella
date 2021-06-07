@@ -497,6 +497,11 @@ section .h-2 {
   background-color: #0b6354;
   color: #FFFFFF;
   width: 30rem;
+  transition: background-color .3s ease-in-out;
+}
+
+.cta .col-1 a:hover {
+  background-color: #303030;
 }
 
 .cta .col-1 p {
