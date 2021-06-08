@@ -32,13 +32,3 @@ function removeSlideInNavList() {
     leftBox.classList.remove('active');
     rightBox.classList.remove('active');
 }
-
-// HERO SLIDER
-$('.hero__slides').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: false,
-    nextArrow: false
-});
