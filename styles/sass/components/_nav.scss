@@ -62,26 +62,18 @@
         padding: 0 10rem;
 
         button {
+            display: none;
             width: 3.5rem;
             height: 3.5rem;
-            background-color: #272727;
             cursor: pointer;
             border: none;
             outline: none;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 1rem;
-
             position: absolute;
             top: 2rem;
             right: 2rem;
-            display: none;
+            @include closeBtn;
 
-            img {
-                width: 13px;
-            }
+            img {width: 1.3rem;}
         }
 
         ul {
@@ -152,14 +144,10 @@
             }
 
             div {
+                display: flex;
                 width: 5rem;
                 height: 5rem;
-                background-color: #272727;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-left: 1rem;
+                @include closeBtn;
             }
 
             img {

@@ -136,25 +136,24 @@ ul {
 }
 
 .nav .left-box button {
+  display: none;
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #272727;
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
-  display: none;
+  background-color: #272727;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
 }
 
 .nav .left-box button img {
-  width: 13px;
+  width: 1.3rem;
 }
 
 .nav .left-box ul a {
@@ -220,11 +219,11 @@ ul {
 }
 
 .nav .right-box .close div {
+  display: flex;
   width: 5rem;
   height: 5rem;
   background-color: #272727;
   border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 1rem;
@@ -780,8 +779,6 @@ section .h-2 {
   }
   .nav .left-box button {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .nav .right-box {
     display: none;
