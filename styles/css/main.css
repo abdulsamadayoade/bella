@@ -323,6 +323,7 @@ ul {
   text-transform: uppercase;
   letter-spacing: 1.7px;
   word-spacing: 3px;
+  z-index: 10;
 }
 
 .btn-green {
@@ -390,8 +391,10 @@ header .hero {
 }
 
 header .hero__text-box {
-  position: relative;
-  right: -20rem;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  max-width: 50rem;
 }
 
 header .hero__text-box .btn {
@@ -399,8 +402,12 @@ header .hero__text-box .btn {
 }
 
 header .hero__image-box {
-  flex-basis: 70% img;
-  flex-basis-width: 100%;
+  background-image: url("../../../assets/yoga-instrucutor.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-basis: 70%;
+  margin-left: 30%;
+  height: 85vh;
 }
 
 section {

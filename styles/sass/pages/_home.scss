@@ -7,8 +7,10 @@ header {
         align-items: center;
 
         &__text-box {
-            position: relative;
-            right: -20rem;
+            position: absolute;
+            top: 35%;
+            left: 15%;
+            max-width: 50rem;
 
             .btn {
                 margin-top: 3rem;
@@ -16,8 +18,12 @@ header {
         }
 
         &__image-box {
-            flex-basis: 70%
-            img {width: 100%;}
+            background-image: url('../../../assets/yoga-instrucutor.jpg');
+            background-size: cover;
+            background-position: center;
+            flex-basis: 70%;
+            margin-left: 30%;
+            height: 85vh;
         }
     }
 }
