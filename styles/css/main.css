@@ -78,7 +78,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  z-index: 100;
+  z-index: 50;
 }
 
 .nav__logo {
@@ -130,7 +130,31 @@ ul {
   width: 60%;
   transform: translateX(-100%);
   transition: transform .5s ease;
-  padding: 10rem 2rem 0 12rem;
+  display: flex;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.nav .left-box button {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #272727;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+}
+
+.nav .left-box button img {
+  width: 13px;
 }
 
 .nav .left-box ul a {
@@ -748,4 +772,18 @@ section .h-2 {
   text-decoration: underline;
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav .left-box {
+    width: 100%;
+  }
+  .nav .left-box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav .right-box {
+    display: none;
+  }
 }

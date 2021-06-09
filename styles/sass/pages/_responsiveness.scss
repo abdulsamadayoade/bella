@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+    .nav {
+        
+        .left-box {
+            width: 100%;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .right-box {
+            display: none;
+        }
+    }
+}

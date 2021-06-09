@@ -3,6 +3,7 @@ const navMenu = document.querySelector('.nav__menu');
 const leftBox = document.querySelector('.left-box');
 const rightBox = document.querySelector('.right-box');
 const closeMenu = document.querySelector('.close');
+const closeMobile = document.querySelector('.close-mobile');
 
 
 navMenu.addEventListener('click', slideInNavList);
@@ -27,6 +28,7 @@ function slideInNavList(e) {
 }
 
 closeMenu.addEventListener('click', removeSlideInNavList);
+closeMobile.addEventListener('click', removeSlideInNavList);
 
 function removeSlideInNavList() {
     leftBox.classList.remove('active');

@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 100;
+    z-index: 50;
 
     &__logo {
         text-transform: uppercase;
@@ -57,7 +57,32 @@
         width: 60%;
         transform: translateX(-100%);
         transition: transform .5s ease;
-        padding: 10rem 2rem 0 12rem;
+        display: flex;
+        align-items: center;
+        padding: 0 10rem;
+
+        button {
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #272727;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1rem;
+
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: none;
+
+            img {
+                width: 13px;
+            }
+        }
 
         ul {
             a {
