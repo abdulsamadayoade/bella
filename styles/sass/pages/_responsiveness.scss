@@ -14,3 +14,56 @@
         }
     }
 }
+
+@media screen and(max-width: 900px) {
+    .discover {
+        .row-pc {
+            display: none;
+        }
+
+        .row-slider {
+            display: flex;
+
+            .col {
+                width: 300px;
+                outline: none;
+                margin-right: 1rem;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .slick-dots li button::before {
+                color: $color-3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    header {
+        .container {
+            padding: 0;
+        }
+
+        .nav {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .hero {
+            &__text-box {
+                transform: translateX(0);
+            }
+
+            &__image-box {
+                display: none;
+            }
+
+            background-image: url('../../../assets/yoga-instrucutor.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 2rem;
+        }
+    }
+}

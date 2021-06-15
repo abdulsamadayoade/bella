@@ -79,6 +79,7 @@ ul {
   align-items: center;
   position: relative;
   z-index: 50;
+  height: 8rem;
 }
 
 .nav__logo {
@@ -411,26 +412,25 @@ header {
 header .hero {
   display: flex;
   align-items: center;
+  height: calc(100vh - 8rem);
+  overflow-y: hidden;
 }
 
 header .hero__text-box {
-  position: absolute;
-  top: 35%;
-  left: 15%;
   max-width: 50rem;
+  transform: translateX(50%);
 }
 
-header .hero__text-box .btn {
-  margin-top: 3rem;
+header .hero__text-box p {
+  margin-bottom: 3rem;
 }
 
 header .hero__image-box {
   background-image: url("../../../assets/yoga-instrucutor.jpg");
   background-size: cover;
   background-position: center;
-  flex-basis: 70%;
-  margin-left: 30%;
-  height: 85vh;
+  height: 100%;
+  flex: 1;
 }
 
 section {
@@ -460,28 +460,36 @@ section .h-2 {
   margin-bottom: 5rem;
 }
 
-.discover .row {
+.discover .row-pc {
   display: grid;
-  grid-template-columns: repeat(3, minmax(40rem, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(3, 32%);
+  gap: 2rem;
 }
 
-.discover .col img {
+.discover .row-pc a {
+  display: block;
+}
+
+.discover .row-pc .col img {
   transition: transform .3s ease-in-out;
   width: 100%;
 }
 
-.discover .col h4 {
+.discover .row-pc .col h4 {
   color: #8b8b8b;
   font-weight: 400;
   margin-top: 2rem;
 }
 
-.discover .col p {
+.discover .row-pc .col p {
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: .3px;
   margin-top: .7rem;
+}
+
+.discover .row-slider {
+  display: none;
 }
 
 .discover a:hover img {
@@ -781,6 +789,48 @@ section .h-2 {
     display: flex;
   }
   .nav .right-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .discover .row-pc {
+    display: none;
+  }
+  .discover .row-slider {
+    display: flex;
+  }
+  .discover .row-slider .col {
+    width: 300px;
+    outline: none;
+    margin-right: 1rem;
+  }
+  .discover .row-slider .col img {
+    width: 100%;
+  }
+  .discover .row-slider .slick-dots li button::before {
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  header .container {
+    padding: 0;
+  }
+  header .nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  header .hero {
+    background-image: url("../../../assets/yoga-instrucutor.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+  }
+  header .hero__text-box {
+    transform: translateX(0);
+  }
+  header .hero__image-box {
     display: none;
   }
 }

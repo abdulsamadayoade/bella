@@ -34,3 +34,14 @@ function removeSlideInNavList() {
     leftBox.classList.remove('active');
     rightBox.classList.remove('active');
 }
+
+// SLIDER
+$('.row-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    prevArrow: false,
+    nextArrow: false
+});
