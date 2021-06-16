@@ -455,9 +455,15 @@ section .h-2 {
 }
 
 .discover p {
-  width: 80rem;
+  max-width: 80rem;
   color: #FFFFFF;
   margin-bottom: 5rem;
+}
+
+.discover h4 {
+  color: #8b8b8b;
+  font-weight: 400;
+  margin-top: 2rem;
 }
 
 .discover .row-pc {
@@ -470,22 +476,16 @@ section .h-2 {
   display: block;
 }
 
-.discover .row-pc .col img {
-  transition: transform .3s ease-in-out;
-  width: 100%;
-}
-
-.discover .row-pc .col h4 {
-  color: #8b8b8b;
-  font-weight: 400;
-  margin-top: 2rem;
-}
-
-.discover .row-pc .col p {
+.discover .row-pc .paragraph, .discover .row-pc p, .discover .row-pc .row-slider p, .discover .row-slider .row-pc p {
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: .3px;
   margin-top: .7rem;
+}
+
+.discover .row-pc .col img {
+  transition: transform .3s ease-in-out;
+  width: 100%;
 }
 
 .discover .row-slider {

@@ -43,5 +43,14 @@ $('.row-slider').slick({
     autoplaySpeed: 2000,
     dots: true,
     prevArrow: false,
-    nextArrow: false
+    nextArrow: false,
+    responsive: [
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+    ]
 });
