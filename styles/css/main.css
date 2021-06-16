@@ -508,7 +508,6 @@ section .h-2 {
 
 .cta img {
   width: 100%;
-  height: 100%;
 }
 
 .cta .col {
@@ -810,6 +809,21 @@ section .h-2 {
   }
   .discover .row-slider .slick-dots li button::before {
     color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .row-2 {
+    flex-direction: column-reverse;
+  }
+  .flex-reverse {
+    flex-direction: column !important;
+  }
+  .cta .col {
+    width: 100%;
+  }
+  .cta .col-2 {
+    height: 70rem;
   }
 }
 

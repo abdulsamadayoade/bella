@@ -41,6 +41,26 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .row-2 {
+        flex-direction: column-reverse;
+    }
+
+    .flex-reverse {
+        flex-direction: column !important;
+    }
+
+    .cta {
+        .col {
+            width: 100%;
+        }
+
+        .col-2 {
+            height: 70rem;
+        }
+    }
+}
+
 @media screen and (max-width: 730px) {
     header {
         .container {
