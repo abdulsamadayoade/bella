@@ -854,7 +854,7 @@ section .h-2 {
 }
 
 @media screen and (max-width: 730px) {
-  header .container {
+  header .container-lg {
     padding: 0;
   }
   header .nav {
