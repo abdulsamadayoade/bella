@@ -1,3 +1,15 @@
+@media screen and (max-width: 1200px) {
+    .clients {
+        .col-2 {
+            padding: 0 3rem;
+        }
+
+        &__testimonial {
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .nav {
         
@@ -11,6 +23,22 @@
 
         .right-box {
             display: none;
+        }
+    }
+
+    .clients {
+        .row-2 {
+            flex-direction: column-reverse;
+        }
+
+        .col-2 {
+            height: auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        &__testimonial {
+            width: 60%;
         }
     }
 }
@@ -80,6 +108,34 @@
             background-size: cover;
             background-position: center;
             padding: 2rem;
+        }
+    }
+
+    .clients {
+        .row-2 {
+            flex-direction: column-reverse;
+        }
+
+        .col-2 {
+            height: auto;
+            width: 100%;
+            padding: 0;
+        }
+
+        &__logos {
+            grid-template-columns: repeat(3, 150px);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .clients {
+        &__logos {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__testimonial {
+            width: 100%;
         }
     }
 }

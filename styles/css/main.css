@@ -598,7 +598,7 @@ section .h-2 {
 }
 
 .clients__testimonial > p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .clients__profile {
@@ -617,13 +617,13 @@ section .h-2 {
 }
 
 .clients__profile--name {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
 .clients__profile--title {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   letter-spacing: .5px;
 }
 
@@ -789,6 +789,15 @@ section .h-2 {
   font-weight: 500;
 }
 
+@media screen and (max-width: 1200px) {
+  .clients .col-2 {
+    padding: 0 3rem;
+  }
+  .clients__testimonial {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .nav .left-box {
     width: 100%;
@@ -798,6 +807,17 @@ section .h-2 {
   }
   .nav .right-box {
     display: none;
+  }
+  .clients .row-2 {
+    flex-direction: column-reverse;
+  }
+  .clients .col-2 {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .clients__testimonial {
+    width: 60%;
   }
 }
 
@@ -852,5 +872,25 @@ section .h-2 {
   }
   header .hero__image-box {
     display: none;
+  }
+  .clients .row-2 {
+    flex-direction: column-reverse;
+  }
+  .clients .col-2 {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .clients__logos {
+    grid-template-columns: repeat(3, 150px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .clients__logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .clients__testimonial {
+    width: 100%;
   }
 }
