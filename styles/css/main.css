@@ -62,14 +62,27 @@ ul {
   list-style: none;
 }
 
-.container {
-  max-width: 130rem;
+.containers, .container, .container-lg, .container-xlg {
   padding: 0 2rem;
   margin: 0 auto;
 }
 
+.container {
+  max-width: 120rem;
+}
+
+.container-lg {
+  max-width: 130rem;
+}
+
+.container-xlg {
+  max-width: 150rem;
+  padding: 0;
+}
+
 .row-2 {
   display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -500,34 +513,26 @@ section .h-2 {
   padding: 0;
 }
 
-.cta .h-2 {
-  width: 60rem;
-  max-width: 100%;
-  margin: 3rem 0 4rem;
-}
-
-.cta img {
-  width: 100%;
-}
-
-.cta .col {
-  height: 65rem;
-}
-
-.cta .col-1 {
+.cta .text-box {
   width: 60%;
-  padding: 2rem;
+  padding: 5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cta .col-1 div {
+.cta .text-box .h-2 {
+  width: 60rem;
+  max-width: 100%;
+  margin: 3rem 0 4rem;
+}
+
+.cta .text-box div {
   width: 60rem;
   max-width: 100%;
 }
 
-.cta .col-1 a {
+.cta .text-box a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -537,16 +542,20 @@ section .h-2 {
   transition: background-color .3s ease-in-out;
 }
 
-.cta .col-1 a:hover {
+.cta .text-box a:hover {
   background-color: #303030;
 }
 
-.cta .col-1 p {
+.cta .text-box p {
   margin-top: 5rem;
 }
 
-.cta .col-2 {
+.cta .image-box {
   width: 40%;
+}
+
+.cta .image-box img {
+  width: 100%;
 }
 
 .clients .col {
@@ -814,16 +823,13 @@ section .h-2 {
 
 @media screen and (max-width: 800px) {
   .row-2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
-  .flex-reverse {
-    flex-direction: column !important;
+  .col-reverse {
+    flex-direction: column-reverse;
   }
   .cta .col {
     width: 100%;
-  }
-  .cta .col-2 {
-    height: 70rem;
   }
 }
 

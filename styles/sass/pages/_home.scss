@@ -111,26 +111,18 @@ section {
 .cta {
     padding: 0;
 
-    .h-2 {
-        width: 60rem;
-        max-width: 100%;
-        margin: 3rem 0 4rem;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .col {
-        height: 65rem;
-    }
-
-    .col-1 {
+    .text-box {
         width: 60%;
-        padding: 2rem;
+        padding: 5rem 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .h-2 {
+            width: 60rem;
+            max-width: 100%;
+            margin: 3rem 0 4rem;
+        }
         
         div {
             width: 60rem;
@@ -156,8 +148,12 @@ section {
         }
     }
 
-    .col-2 {
+    .image-box {
         width: 40%;
+
+        img {
+            width: 100%;
+        }
     }
 }
 

@@ -43,20 +43,16 @@
 
 @media screen and (max-width: 800px) {
     .row-2 {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
-    .flex-reverse {
-        flex-direction: column !important;
+    .col-reverse {
+        flex-direction: column-reverse;
     }
 
     .cta {
         .col {
             width: 100%;
-        }
-
-        .col-2 {
-            height: 70rem;
         }
     }
 }

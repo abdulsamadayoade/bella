@@ -1,9 +1,25 @@
-.container {
-    max-width: 130rem;
+.containers {
     padding: 0 2rem;
     margin: 0 auto;
 }
 
+.container {
+    @extend .containers;
+    max-width: 120rem;
+}
+
+.container-lg {
+    max-width: 130rem;
+    @extend .containers;
+}
+
+.container-xlg {
+    @extend .containers;
+    max-width: 150rem;
+    padding: 0;
+}
+
 .row-2 {
     display: flex;
+    align-items: center;
 }
