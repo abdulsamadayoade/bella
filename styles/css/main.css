@@ -756,7 +756,7 @@ section .h-2 {
   content: '';
   position: absolute;
   top: 0;
-  left: -14rem;
+  left: -15%;
   width: 10rem;
   height: 10rem;
   background-image: url("../../../assets/left-quote.svg");
@@ -835,6 +835,11 @@ section .h-2 {
   .plans .col:last-child {
     width: 100%;
   }
+  .quote-box::before {
+    left: -12%;
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -866,6 +871,12 @@ section .h-2 {
   }
   .cta .col {
     width: 100%;
+  }
+  .quote-box::before {
+    top: -25%;
+    left: -2%;
+    width: 6rem;
+    height: 6rem;
   }
 }
 
@@ -915,5 +926,8 @@ section .h-2 {
   .plans-box {
     grid-template-columns: 1fr;
     gap: 2rem 1.5rem;
+  }
+  .quote-box p {
+    line-height: 1;
   }
 }

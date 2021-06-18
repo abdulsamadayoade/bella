@@ -64,6 +64,16 @@
             width: 100%;
         }
     }
+
+    .quote {
+        &-box {
+            &::before {
+                left: -12%;
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+    }
 }
 
 @media screen and(max-width: 900px) {
@@ -104,6 +114,17 @@
     .cta {
         .col {
             width: 100%;
+        }
+    }
+
+    .quote {
+        &-box {
+            &::before {
+                top: -25%;
+                left: -2%;
+                width: 6rem;
+                height: 6rem;
+            }
         }
     }
 }
@@ -169,6 +190,14 @@
         &-box {
             grid-template-columns: 1fr;
             gap: 2rem 1.5rem;
+        }
+    }
+
+    .quote {
+        &-box {
+            p {
+                line-height: 1;
+            }
         }
     }
 }
