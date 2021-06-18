@@ -54,3 +54,38 @@ $('.row-slider').slick({
         }
     ]
 });
+
+// GETTING QUOTES FROM THE JSON FILE
+function getQuotes() {
+  const xhr = new XMLHttpRequest();
+
+  xhr.open('GET', '/quotes.json', true);
+
+  xhr.onload = function () {
+    if (this.status === 200) {
+      const result = JSON.parse(this.responseText);
+
+      const quoteText = document.querySelector('.quote-text');
+      const quoteAuthor = document.querySelector('.quote-author');
+
+      const quotesArray = result;
+      let curQuoteIndex = -1;
+
+      let intervalID = setInterval(function() {
+        ++curQuoteIndex;
+        function renderQuote() {
+          quoteAuthor.innerText = quotesArray[curQuoteIndex].author;
+          quoteText.innerText = quotesArray[curQuoteIndex].quote;
+        }
+        if (curQuoteIndex >= quotesArray.length) {
+          curQuoteIndex = 0;
+        }
+        renderQuote(quotesArray[curQuoteIndex]);
+      }, 3000);
+    }
+  }
+
+  xhr.send();
+}
+
+getQuotes();
