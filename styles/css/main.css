@@ -819,6 +819,22 @@ section .h-2 {
   .clients__testimonial {
     width: 60%;
   }
+  .plans .row-2 {
+    flex-direction: column;
+  }
+  .plans .col:first-child {
+    margin-bottom: 3rem;
+  }
+  .plans .col:first-child span {
+    margin-bottom: 1rem;
+  }
+  .plans .col:last-child {
+    padding: 0;
+  }
+  .plans .col:first-child,
+  .plans .col:last-child {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -892,5 +908,12 @@ section .h-2 {
   }
   .clients__testimonial {
     width: 100%;
+  }
+  .plans .col:first-child {
+    display: block;
+  }
+  .plans-box {
+    grid-template-columns: 1fr;
+    gap: 2rem 1.5rem;
   }
 }

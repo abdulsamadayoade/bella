@@ -41,6 +41,29 @@
             width: 60%;
         }
     }
+
+    .plans {
+        .row-2 {
+            flex-direction: column;
+        }
+
+        .col:first-child {
+            margin-bottom: 3rem;
+
+            span {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .col:last-child {
+            padding: 0;
+        }
+
+        .col:first-child,
+        .col:last-child {
+            width: 100%;
+        }
+    }
 }
 
 @media screen and(max-width: 900px) {
@@ -136,6 +159,16 @@
 
         &__testimonial {
             width: 100%;
+        }
+    }
+
+    .plans {
+        .col:first-child {
+            display: block;
+        }
+        &-box {
+            grid-template-columns: 1fr;
+            gap: 2rem 1.5rem;
         }
     }
 }
