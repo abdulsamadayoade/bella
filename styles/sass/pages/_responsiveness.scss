@@ -195,7 +195,12 @@
 
     .quote {
         &-box {
+            &::before {
+                top: -45%;
+            }
+
             p {
+                font-size: 4rem;
                 line-height: 1;
             }
         }

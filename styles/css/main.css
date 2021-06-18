@@ -928,7 +928,11 @@ section .h-2 {
     grid-template-columns: 1fr;
     gap: 2rem 1.5rem;
   }
+  .quote-box::before {
+    top: -45%;
+  }
   .quote-box p {
+    font-size: 4rem;
     line-height: 1;
   }
 }
